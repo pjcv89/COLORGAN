@@ -9,7 +9,7 @@ import tensorflow as tf
 tf.app.flags.DEFINE_string("devices", "gpu:0", "Which gpu to be used")
 
 ##params for dataset and environment
-tf.app.flags.DEFINE_string("dataset", "lsun_64", "The name of dataset [celebA, lsun_64]")
+tf.app.flags.DEFINE_string("dataset", "imagenet", "The name of dataset [imagenet, lsun_64]")
 tf.app.flags.DEFINE_string("dir_tag", "wgan_RMS", "dir_tag for sample_dir and checkpoint_dir")
 tf.app.flags.DEFINE_string("result_dir", "./result/", "Where to save the checkpoint and sample")
 tf.app.flags.DEFINE_boolean("visualize", False, "True for visualizing, False for nothing [False]")
