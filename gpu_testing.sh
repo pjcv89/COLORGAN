@@ -29,6 +29,6 @@ export TMP=/disk/scratch/${STUDENT_ID}/
 
 source /home/${STUDENT_ID}/miniconda3/bin/activate py27
 
-cd pix2pix-tensorflow
+cd wgan
 
-python main.py --dataset_name imagenet --phase test --batch_size 20 --fine_size 128
+python main_wgan.py --is_train=False --data_set="imagenet" --dir_tag="wgan_RMS" --test_random_z=True --test_offset=1 --improved_wgan=True
