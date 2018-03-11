@@ -31,4 +31,4 @@ source /home/${STUDENT_ID}/miniconda3/bin/activate py27
 
 cd wgan
 
-python main_wgan.py --is_train=False --data_set="imagenet" --dir_tag="wgan_RMS" --test_random_z=True --test_offset=1 --improved_wgan=True
+python main_wgan.py --is_train=False --data_set="imagenet" --dir_tag="wgan_improved" --test_random_z=True --test_offset=1 --improved_wgan=True
