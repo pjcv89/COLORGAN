@@ -12,8 +12,8 @@ from utils_new import *
 
 class DataProvider(object):
     def __init__(self, config):
-        if config.dataset == 'celebA':
-            self.data = glob(os.path.join("./data/celebA/img_align_celeba/*.jpg"))
+        if config.dataset == 'imagenet':
+            self.data = glob(os.path.join("./data/imagenet/train/*.jpg"))
         elif config.dataset == 'lsun_64':
             with open('../lsun_64/bedroom_train_valid.lst', 'r') as lstfile:
                 self.data = ['../lsun_64/bedroom_train/'+imgname for imgname in lstfile.read().split()]
